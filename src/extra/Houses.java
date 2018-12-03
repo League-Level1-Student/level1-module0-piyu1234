@@ -20,15 +20,32 @@ hi.setPenColor(Color.blue);
 hi.setSpeed(500);
 hi.miniaturize();
 for (int i = 0; i < 10; i++) {
-drawHouse(500);
+//drawHouse(500);
 }
 	//3. Extract the piece of code that draws the house into a method. Draw 10 houses. 
 
 	//4. Change the method to take (int height) as a parameter. Draw 9 houses of different heights 
-int random 
+//drawHouse(10);
+//drawHouse(20);
+//drawHouse(30);
+//drawHouse(40);
+//drawHouse(50);
+//drawHouse(60);
+//drawHouse(70);
+//drawHouse(80);
+//drawHouse(90);
 	//5. Make the method take a String instead of an int. 
+drawHouse("EXSMALL");
+drawHouse("SMall");
+drawHouse("MEDIUM");
+drawHouse("BIG");
+drawHouse("superbig");
+drawHouse("humongous");
+drawHouse("universalbig");
+drawHouse("universaldoublebig");
+drawHouse("INFINITY");
 
-	       
+
 	//6. Make the method take a color as well as a height. The houses are drawn in that color. 
 
 	//[optional] Set the scene to night by setting the background to black 
@@ -50,7 +67,41 @@ hi.setPenColor(Color.blue);
 	hi.move(height);
 	hi.turn(-90);
 	hi.setPenColor(Color.GREEN);
-	hi.move(30);
-}
+	hi.move(30); }  
 
+
+
+static void drawHouse(String height) {
+	if(height.equals("EXSMALL")) {
+		drawHouse(1); }
+		
+	if(height.equals("SMall")) {
+			drawHouse(5); }
+
+	if(height.equals("MEDIUM")) {
+		drawHouse(250);  }
+	
+	if(height.equals("BIG")) {
+		drawHouse(500);  }
+		
+	if(height.equals("superbig")) {
+			drawHouse(800);  }
+	
+	if(height.equals("humongous")) {
+				drawHouse(1000);  }
+				
+	if(height.equals("universalbig")) {
+					drawHouse(1200);  }
+					
+	if(height.equals("universaldoublebig")) {
+				    drawHouse(1400);  }
+				    
+    if(height.equals("INFINITY")) {
+				    drawHouse(1800);
+    }
 }
+}
+    
+	
+
+

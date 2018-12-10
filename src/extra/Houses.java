@@ -35,16 +35,17 @@ for (int i = 0; i < 10; i++) {
 //drawHouse(80);
 //drawHouse(90);
 	//5. Make the method take a String instead of an int. 
-drawHouse("EXSMALL");
-drawHouse("SMall");
-drawHouse("MEDIUM");
-drawHouse("BIG");
-drawHouse("superbig");
-drawHouse("humongous");
-drawHouse("universalbig");
-drawHouse("universaldoublebig");
-drawHouse("INFINITY");
+//drawHouse("EXSMALL");
+//drawHouse("SMall");
+//drawHouse("MEDIUM");
+//drawHouse("BIG");
+//drawHouse("superbig");
+//drawHouse("humongous");
+//drawHouse("universalbig");
+//drawHouse("universaldoublebig");
+//drawHouse("INFINITY");
 
+drawTop(80);
 
 	//6. Make the method take a color as well as a height. The houses are drawn in that color. 
 
@@ -59,7 +60,7 @@ drawHouse("INFINITY");
 }
 static void drawHouse(int height) {
 hi.setAngle(0);	
-hi.setPenColor(Color.blue);
+hi.setRandomPenColor();
 	hi.move(height);
 	hi.turn(90);
 	hi.move(30);
@@ -69,8 +70,28 @@ hi.setPenColor(Color.blue);
 	hi.setPenColor(Color.GREEN);
 	hi.move(30); }  
 
+static void drawTop(int height) {
+	hi.move(height);
+	hi.turn(45);
+	hi.move(30);
+	hi.turn(45);
+	hi.turn(45);
+	hi.move(30);
+	hi.turn(45);
+	hi.move(30);
+	hi.move(30);
+	hi.move(20);
+	hi.turn(-90);
+	hi.setPenColor(Color.GREEN);
+	hi.move(30);
 
 
+	
+	
+	
+
+
+}
 static void drawHouse(String height) {
 	if(height.equals("EXSMALL")) {
 		drawHouse(1); }
@@ -101,6 +122,8 @@ static void drawHouse(String height) {
     }
 }
 }
+
+
     
 	
 

@@ -22,7 +22,7 @@ public class DuelingButtons implements ActionListener {
 	
 	Dimension BIG = new Dimension(400,400);
 	Dimension SMALL = new Dimension(200,200);
-	
+
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 

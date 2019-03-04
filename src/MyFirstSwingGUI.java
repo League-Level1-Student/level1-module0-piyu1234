@@ -28,7 +28,7 @@ public class MyFirstSwingGUI {
 		//6. Create and initialize an object of the JLabel class
         JLabel label = new JLabel();
 		//7. Set the text of the JLabel to a lovely greeting.
-      label.setText("HELLO RICHU DIDI!!! I LOVE YOU SO MUCH!!");
+      label.setText("HELLO MOMMY!!! I LOVE YOU SO MUCH!!");
 		//8. Add the JPanel object to the JFrame
       frame.add(panel);
       

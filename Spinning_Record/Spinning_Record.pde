@@ -10,7 +10,7 @@ size(600,600);
 pictureOfRecord= loadImage("Pinkrecord.png");
 pictureOfRecord.resize(400,400); 
 minim = new Minim(this);
-song = minim.loadFile("GirlsLikeYou.mp3", 512);
+song = minim.loadFile("Hawa Hawai.mp3", 512);
 
 
 
@@ -23,7 +23,7 @@ song = minim.loadFile("GirlsLikeYou.mp3", 512);
 
 }
 
-void draw(){
+void draw () {
   
 if (mousePressed) {
  song.play();
